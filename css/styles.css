@@ -3,11 +3,16 @@
     --titile-text-color: #212121;
     --white-text-color: #FFFFFF;
     --accent-text-color: #2196F3;
+    --primary-bg-color: #ffffff;
+    --button-bg-color: #F5F4FA;
+    --focus-button-bg-color: #2196F3;
+
+
 }
 
 .page1,
 .page2 {
-    background-color: var(--white-text-color);
+    background-color: var(--primary-bg-color);
     color: var(--primary-text-color); 
 }
 
@@ -20,6 +25,10 @@
 .logo {
     color: var(--accent-text-color);
     ;
+}
+
+.site-nav-link-primary {
+    color: var(--accent-text-color);
 }
 
 .site-nav-link:hover,
@@ -57,6 +66,20 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
+.button {
+    color: var(--white-text-color);
+    background-color: var(--focus-button-bg-color);
+}
+
+.button.photo-nav {
+    color: var(--titile-text-color);
+    background-color: var(--button-bg-color);  
+}
+
+.button.photo-nav.primary {
+    color: var(--white-text-color);
+    background-color: var(--focus-button-bg-color);
+}
 
 /* background: #FFFFFF; */
 /* вторичный для "наша команда" background: #F5F4FA; */
