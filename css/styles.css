@@ -76,6 +76,12 @@
     background-color: var(--button-bg-color);  
 }
 
+.button.photo-nav:hover,
+.button.photo-nav:focus {
+    color: var(--white-text-color);
+    background-color: var(--focus-button-bg-color);
+}
+
 .button.photo-nav.primary {
     color: var(--white-text-color);
     background-color: var(--focus-button-bg-color);
