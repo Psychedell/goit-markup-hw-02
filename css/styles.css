@@ -9,8 +9,10 @@
 }
 
 .body {
+    background-color: var(--primary-bg-color);
     color: var(--primary-text-color); 
     font-family: roboto, sans-serif;
+    letter-spacing: 0.03em;
 }
 
 .link,
@@ -21,7 +23,19 @@
 /* site nav */
 .logo {
     font-family: Raleway, sans-serif;
-    ;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+}
+
+.site-nav,
+.auth-nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .logo-link {
@@ -32,30 +46,86 @@
     color: var(--accent-text-color);
 }
 
-.site-nav-link:hover,
-.site-nav-link:focus,
-.auth-nav-link:hover,
-.auth-nav-link:focus,
-.footer-logo-address:hover,
-.footer-logo-address:focus,
-.address-phone-mail:hover, 
-.address-phone-mail:focus {
+.decor:hover,
+.decor:focus {
     color: var(--accent-text-color);
+}
+
+.decor {
+    text-decoration: none;
 }
 
 /* hero */
 .hero-title {
     color: var(--white-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 /* section */
-.section-title {
+.section-title,
+.section-title-name,
+.section-title-photos {
     color: var(--titile-text-color);
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.features-title-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
 /* features */
 .features .features-title {
     color: var(--titile-text-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+/* team */
+.team {
+    background-color: #F5F4FA;
+}
+
+.section-title-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.section-title-profession {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+/* portfolio photos */
+.section-title-photos {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.section-title-photos-career {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
 }
 
 /* footer */
@@ -71,15 +141,34 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-logo-address,
+.address-phone-mail {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
 /* buttons */
 .button {
     color: var(--white-text-color);
     background-color: var(--focus-button-bg-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 
 .button.photo-nav {
     color: var(--titile-text-color);
-    background-color: var(--button-bg-color);  
+    background-color: var(--button-bg-color); 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    display: block;
+    text-align: center;
+    letter-spacing: 0.03em;
+
 }
 
 .button.photo-nav:hover,
@@ -93,3 +182,8 @@
     background-color: var(--focus-button-bg-color);
 }
 
+/* footer */
+.footer,
+.hero {
+    background-color: #2F303A;
+}
