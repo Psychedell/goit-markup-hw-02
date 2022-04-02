@@ -6,6 +6,7 @@
     --primary-bg-color: #ffffff;
     --button-bg-color: #F5F4FA;
     --focus-button-bg-color: #2196F3;
+    --focus-button-bg-color-order: #188CE8;
 }
 
 .body {
@@ -13,6 +14,7 @@
     color: var(--primary-text-color); 
     font-family: roboto, sans-serif;
     letter-spacing: 0.03em;
+    font-weight: 400;
 }
 
 .link,
@@ -23,9 +25,9 @@
 /* site nav */
 .logo {
     font-family: Raleway, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
     text-decoration: none;
 }
 
@@ -81,7 +83,6 @@
 }
 
 .features-title-text {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
@@ -108,7 +109,6 @@
 }
 
 .section-title-profession {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -123,7 +123,6 @@
 }
 
 .section-title-photos-career {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
 }
@@ -143,9 +142,13 @@
 
 .footer-logo-address,
 .address-phone-mail {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+}
+
+.footer,
+.hero {
+    background-color: #2F303A;
 }
 
 /* buttons */
@@ -157,6 +160,7 @@
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 
 .button.photo-nav {
@@ -168,7 +172,13 @@
     display: block;
     text-align: center;
     letter-spacing: 0.03em;
+    font-family: inherit;
+    cursor: pointer;
+}
 
+.button:hover,
+.button:focus {
+    background-color: var(--focus-button-bg-color-order)
 }
 
 .button.photo-nav:hover,
@@ -180,10 +190,4 @@
 .button.photo-nav.primary {
     color: var(--white-text-color);
     background-color: var(--focus-button-bg-color);
-}
-
-/* footer */
-.footer,
-.hero {
-    background-color: #2F303A;
 }
