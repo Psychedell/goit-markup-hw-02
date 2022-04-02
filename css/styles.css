@@ -7,6 +7,7 @@
     --button-bg-color: #F5F4FA;
     --focus-button-bg-color: #2196F3;
     --focus-button-bg-color-order: #188CE8;
+    --black-logo-color: #000;
 }
 
 .body {
@@ -17,6 +18,14 @@
     font-weight: 400;
 }
 
+.site-nav-link {
+    color: var(--titile-text-color);
+}
+
+.auth-nav-link {
+    color: var(--primary-text-color);
+}
+
 .link,
 .list {
     list-style: none;
@@ -24,6 +33,7 @@
 
 /* site nav */
 .logo {
+    color: var(--black-logo-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
